@@ -1,0 +1,198 @@
+/* 공통 스타일 */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* 키치한 느낌의 폰트 */
+    margin: 0;
+    padding: 0;
+    background-color: #FF7BFF; /* 핑크색 배경 */
+    color: #000000; /* 기본 텍스트는 검정 */
+    line-height: 1.8;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* 헤더 스타일 */
+  header {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center/cover;
+    background-color: #FFD700; /* 밝은 노란색 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FF00FF; /* 푸시아 색상 */
+    padding: 4rem 2rem;
+  }
+  
+  header h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #FF00FF; /* 강렬한 푸시아 */
+    text-shadow: 3px 3px 0px #FFFF00, 5px 5px 10px rgba(0,0,0,0.2); /* 네온 효과 */
+  }
+  
+  header p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px #000000;
+  }
+  
+  header a {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #00FFFF; /* 밝은 청록색 버튼 */
+    color: #FF0000;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  header a:hover {
+    transform: scale(1.1);
+    background-color: #FF0000; /* 호버 시 빨간색 */
+  }
+  
+  /* 섹션 스타일 */
+  section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #FF00FF;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 5px #000000;
+  }
+  
+  /* 카드 섹션 */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: #FFFFFF;
+    border: 5px dotted #FF00FF; /* 점선 테두리 */
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #FF00FF; /* 카드 이미지에 테두리 */
+  }
+  
+  .card-content {
+    padding: 1rem;
+    color: #333333;
+  }
+  
+  .card-content h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #FF007F; /* 핑크색 제목 */
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 5px #FFFF00;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    color: #FF7F50; /* 코랄색 텍스트 */
+  }
+  
+  .card-content a {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #FF00FF;
+    font-weight: 600;
+    border-bottom: 2px solid #FF00FF;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .card-content a:hover {
+    color: #FF007F;
+    border-color: #FF007F; /* 링크 호버: 핑크 */
+  }
+  
+  /* 푸터 스타일 */
+  footer {
+    padding: 2rem;
+    background-color: #FFFF00; /* 밝은 노란색 */
+    text-align: center;
+    color: #FF00FF;
+    font-size: 1rem;
+    font-weight: bold;
+    border-top: 5px dashed #FF00FF; /* 대시선 테두리 */
+  }
+  
+  footer a {
+    color: #FF007F;
+    margin: 0 0.5rem;
+  }
+  
+  footer a:hover {
+    color: #FF00FF; /* 링크 호버: 푸시아 */
+  }
+  
+  /* 반응형 디자인 */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    header p {
+      font-size: 1.2rem;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .cards {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    .card-content h3 {
+      font-size: 1.5rem;
+    }
+  
+    .card-content p {
+      font-size: 0.9rem;
+    }
+  }
+  
